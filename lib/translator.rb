@@ -31,5 +31,16 @@ end
 
 
 def get_english_meaning
-  # code goes here
+  emoticons = load_library(file_path)
+  answer = nil
+  emoticons.each do |key, value| 
+    if value[:japanese] == emoticon
+      answer = value[:english]
+    end 
+  end 
+  if answer == nil 
+    "Sorry, that emoticon was not found"
+  else 
+    answer
+  end 
 end
