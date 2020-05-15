@@ -14,7 +14,6 @@ def load_library(file_path)
 end
 
 
-    #emoticons.find {|key,value| value[:english]== emoticon}
 def get_japanese_emoticon(file_path, emoticon)
   emoticons = load_library(file_path)
   answer = nil
@@ -29,6 +28,7 @@ def get_japanese_emoticon(file_path, emoticon)
     answer
   end 
 end
+
 
 def get_english_meaning
   # code goes here
